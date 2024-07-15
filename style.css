@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+body{
+
+    background-color: black;
+    color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.left{
+    width: 25vw;
+}
+.right{
+    width: 80vw;
+    margin: 3px;
+}
+.home ul li{
+    width: 25px;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+}
+.home ul{
+    margin: 10px;
+    margin-left: 15px;
+}
+.home .logo{
+    padding-left: 25px;
+    padding-top: 20px
+}
+.left .libhead{
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.library{
+    min-height: 50vh;
+    position: relative;
+}
+.footer .flex{
+    gap: 25px;
+    padding: 5px;
+    padding-left: 30px ;
+}
+.footer a{
+    color: gray;
+    font-size: 12px;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+
