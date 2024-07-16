@@ -1,56 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap');
-body{
 
+body {
     background-color: black;
     color: black;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-.left{
+
+.left {
     width: 25vw;
 }
-.right{
-    width: 80vw;
+
+.right {
+    width: 75vw;
     margin: 3px;
 }
-.home ul li{
+
+.home ul li {
     width: 25px;
     gap: 20px;
     list-style: none;
     padding: 10px;
     font-weight: bold;
 }
-.home ul{
+
+.home ul {
     margin: 10px;
     margin-left: 15px;
 }
-.home .logo{
+
+.home .logo {
     padding-left: 25px;
     padding-top: 20px
 }
-.left .libhead{
+
+.left .libhead {
     align-items: center;
     gap: 10px;
     padding-left: 20px;
     padding-top: 15px;
 }
-.library{
-    min-height: 50vh;
+
+.library {
+    min-height: 80vh;
     position: relative;
 }
-.footer .flex{
+
+.footer .flex {
     gap: 25px;
     padding: 5px;
-    padding-left: 30px ;
+    padding-left: 30px;
 }
-.footer a{
+
+.footer a {
     color: gray;
     font-size: 12px;
 }
-.footer{
+
+.footer {
     position: absolute;
     bottom: 0;
 }
+.header{
 
+    justify-content: space-between;
+    background-color: #101010;
+}
+.header >*{
+    padding: 26px;
+}
+.right{
+    background-color: #1c1c1c;
+}

@@ -25,5 +25,9 @@
     margin: 5px;
 }
 .p1{
-    padding: 10px;
+    padding: 5px;
+}
+.lwidth{
+    max-width: 25vw;
+    flex-wrap: wrap;
 }
