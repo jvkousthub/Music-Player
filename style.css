@@ -75,3 +75,35 @@ body {
 .right{
     background-color: #1c1c1c;
 }
+.playlist{
+    padding: 5px;
+}
+.cardcontainer{
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px;
+}
+.card{
+    width: 180px;
+    /* border: 2px solid pink; */
+    padding: 10px;
+    border-radius:5px;
+    background-color: #1c1c1c;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+
+}
+.card >*{
+    padding-top: 3px;
+}
+.card .play{
+    position: absolute;
+    bottom: 90px;
+    right: 20px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
