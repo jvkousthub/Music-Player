@@ -7,6 +7,7 @@
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
+    <!-- <script src="https://unpkg.com/music-metadata-browser/dist/music-metadata-browser.min.js"></script> -->
 </head>
 
 <body>
@@ -29,6 +30,11 @@
                     <img class="invert" src="library.svg" alt="Library" width="25px">
                     Your Library
 
+                </div>
+                <div class="list m1">
+                    <ul>
+                        
+                    </ul>
                 </div>
                 <div class="footer">
                     <div class="flex">
@@ -69,20 +75,21 @@
                     </svg>
                 </div>
                 <div class="buttons">
-                    <button>Signup</button>
-                    <button>Login</button>
+                    <button class="signup">Sign up</button>
+                    <button class="login">Log in</button>
                 </div>
 
             </div>
             <div class="playlist">
                 <h1>Spotify Playlist</h1>
-                <div class="cardcontainer m1 p1 flex">
+                <div class="cardcontainer m1 p1 flex rounded">
                     <div class="card">
-                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 100" id="play-button">
-                            <circle cx="50" cy="50" r="50" fill="#1ed760" />
-                            <polygon points="41.6,32.9 67.2,50 41.6,67.1" fill="black" />
-                          </svg>
-                          </div>
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                viewBox="0 0 100 100" id="play-button">
+                                <circle cx="50" cy="50" r="50" fill="#1ed760" />
+                                <polygon points="41.6,32.9 67.2,50 41.6,67.1" fill="black" />
+                            </svg>
+                        </div>
                         <img src="https://i.scdn.co/image/ab67706f0000000255be59b7be2929112e7ac927" alt="songimg">
                         <h2>lofi beats</h2>
                         <p>chill beats, lofi vibes, new tracks every...</p>
@@ -93,8 +100,24 @@
                         <p>chill beats, lofi vibes, new tracks every...</p>
                     </div>
                 </div>
+
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="songinfo"></div>
+                    <div class="playbtns flex">
+                        <img src="previous.svg" alt="prev">
+                        <img class="invert"src="play.svg" alt="play" width="39px">
+                        <img src="next.svg" alt="next">
+                    </div>
+                    <div class="time"></div>
+                </div>
             </div>
         </div>
+        <script src="script.js"></script>
+
+
 </body>
 
 </html>

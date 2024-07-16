@@ -31,3 +31,39 @@
     max-width: 25vw;
     flex-wrap: wrap;
 }
+/* Custom Scrollbar for Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1e1e1e;  /* Dark background for the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;  /* Gray color for the thumb */
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;  /* Slightly darker gray on hover */
+}
+
+/* Handle on active */
+::-webkit-scrollbar-thumb:active {
+  background: #444;  /* Even darker gray when active */
+}
+
+/* Firefox scrollbar styling */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #4d4d4d #1e1e1e;
+}
+
+/* Edge, IE scrollbar styling */
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}

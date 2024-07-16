@@ -45,7 +45,7 @@ body {
 }
 
 .library {
-    min-height: 80vh;
+    min-height:100vh;
     position: relative;
 }
 
@@ -64,46 +64,156 @@ body {
     position: absolute;
     bottom: 0;
 }
-.header{
 
+.header {
+    display: flex;
     justify-content: space-between;
     background-color: #101010;
+    /* position: fixed; */
+    z-index: 10;
+    height: 75px;
 }
-.header >*{
-    padding: 26px;
+
+.header>* {
+    padding: 16px;
 }
-.right{
-    background-color: #1c1c1c;
-}
-.playlist{
-    padding: 5px;
-}
-.cardcontainer{
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 30px;
-}
-.card{
-    width: 180px;
-    /* border: 2px solid pink; */
-    padding: 10px;
-    border-radius:5px;
+
+.right {
     background-color: #1c1c1c;
     position: relative;
 }
-.card img{
+
+.playlist {
+    padding: 5px;
+}
+
+.cardcontainer {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px;
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+.card {
+    width: 180px;
+    /* border: 2px solid pink; */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    position: relative;
+}
+
+.card img {
     width: 100%;
     object-fit: contain;
     border-radius: 10px;
 
 }
-.card >*{
+
+.card>* {
     padding-top: 3px;
 }
-.card .play{
+
+.card .play {
     position: absolute;
     bottom: 90px;
     right: 20px;
     opacity: 0;
     transition: all 1s ease-out;
+}
+
+.buttons>* {
+    margin: 0 15px;
+}
+
+.signup {
+    font-weight: bold;
+    color: #5f5f5f;
+    background-color: #101010;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.signup:hover {
+    font-size: 1.01rem;
+    color: white;
+}
+
+.login {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.login:hover {
+    font-weight: bolder;
+    font-size: 15px;
+
+}
+
+.playbar {
+    position: fixed;
+    bottom: 25px;
+    background-color: rgb(70, 72, 70);
+    width: 69.5vw;
+    padding: 15px;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.playbtns {
+    justify-content: center;
+    gap: 12px;
+}
+.list .info{
+    width: 500px;
+}
+
+.list ul {
+    padding: 0 10px;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.list ul li {
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px 0;
+    cursor: pointer;
+    border: 1px solid rgb(54, 57, 53);
+    margin: 5px;
+    border-radius: 10px;
+}
+.list ul .splay{
+    padding-left: 20px;
+
+}
+.seekbar{
+    height: 6px;
+    background:  black;
+    width: 69.5vw;
+    position: absolute;
+    bottom:2px;
+    z-index: 10;
+    border-radius: 10px;
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    color: #5f5f5f;
+    background-color: rgb(9, 81, 5);
+    position:relative;
+    bottom: 4px;
+    transition: left 0.5s;
 }
