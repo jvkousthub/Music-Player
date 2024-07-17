@@ -96,7 +96,7 @@ body {
 }
 
 .card {
-    width: 180px;
+    width: 15vw;
     /* border: 2px solid pink; */
     padding: 10px;
     border-radius: 5px;
@@ -206,6 +206,7 @@ body {
     bottom:2px;
     z-index: 10;
     border-radius: 10px;
+    cursor: pointer;
 }
 .circle{
     height: 15px;
@@ -216,4 +217,5 @@ body {
     position:relative;
     bottom: 4px;
     transition: left 0.5s;
+    cursor: pointer;
 }
